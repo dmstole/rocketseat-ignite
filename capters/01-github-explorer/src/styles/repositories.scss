@@ -1,0 +1,40 @@
+section {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+section.repository-list {
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    li {
+      & + li {
+        margin-top: 1rem;
+      }
+
+      p {
+        font-size: 14px;
+        color: #444;
+        margin-top: 8px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      a {
+        display: inline-block;
+        margin-top: 1rem;
+        text-decoration: none;
+        color: #8257e6;
+      }
+    }
+  }
+}
